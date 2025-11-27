@@ -1,6 +1,3 @@
-<!-- app/Models/Post.php: -->
-
-
 <?php
 
 namespace App\Models;
@@ -12,7 +9,7 @@ class Post extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id','title','body'];
+    protected $fillable = ['user_id','title','content'];
 
     public function user()
     {
