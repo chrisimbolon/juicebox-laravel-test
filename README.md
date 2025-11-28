@@ -49,7 +49,7 @@ A RESTful API built with Laravel 12 demonstrating authentication, CRUD operation
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/juicebox-laravel-test.git
+git clone https://github.com/chrisimbolon/juicebox-laravel-test
 cd juicebox-laravel-test
 ```
 
@@ -223,17 +223,41 @@ This cron runs every minute, and Laravel decides which scheduled tasks to execut
 
 ---
 
-## 📚 API Documentation
+## 📖 API Documentation
 
-### Base URL
+### Interactive Swagger UI
+
+Access the interactive API documentation at:
 ```
-http://127.0.0.1:8000/api
+http://127.0.0.1:8000/api/documentation
 ```
 
-### Response Format
+**Features:**
+- ✅ Try all endpoints directly in browser
+- ✅ Built-in authentication testing
+- ✅ Request/response examples
+- ✅ Schema validation
+- ✅ Export as OpenAPI JSON
 
-All responses are in JSON format with appropriate HTTP status codes.
+### Generate Documentation
 
+If you make changes to API annotations:
+```bash
+php artisan l5-swagger:generate
+```
+
+### OpenAPI JSON
+
+Access the raw OpenAPI specification at:
+```
+http://127.0.0.1:8000/docs/api-docs.json
+```
+
+This can be imported into:
+- Postman
+- Insomnia  
+- API testing tools
+- Code generators
 ---
 
 ### Authentication Endpoints
@@ -921,8 +945,8 @@ php artisan tinker
 
 For issues or questions about this project:
 
-- **Email:** chris@mail.com
-- **GitHub:** [yourusername/juicebox-laravel-test](https://github.com/yourusername/juicebox-laravel-test)
+- **Email:** christyansimbolon@gmail.com
+- **GitHub:** [yourusername/juicebox-laravel-test](https://github.com/chrisimbolon
 - **Portfolio:** [chrisimbolon.dev](https://chrisimbolon.dev)
 
 ---
@@ -941,6 +965,6 @@ This project is created as a technical assessment for Juicebox Indonesia.
 
 ---
 
-**Built with ❤️ by Christyan Simbolon**
+**Built with lots of coffee by Christyan Simbolon**
 
 **Date:** November 2025
