@@ -19,6 +19,11 @@ Route::get('/weather', [WeatherController::class, 'current']);
 
 // Protected routes
 Route::middleware('auth:sanctum')->group(function () {
+
+    Route::get('/user', function (\Illuminate\Http\Request $request) {
+        return $request->user();
+    });
+    
     Route::post('/logout', [AuthController::class, 'logout']);
     
     // Posts (auth required for write)
